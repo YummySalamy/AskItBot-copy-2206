@@ -11,6 +11,8 @@ const ManageSources = Loadable(lazy(() => import('../views/icons/ManageSourcesPa
 const EmbeddingsPage = Loadable(lazy(() => import('../views/utilities/Embeddings')))
 const ChatBot = Loadable(lazy(() => import('../views/utilities/Chatbot')))
 const FileStorage = Loadable(lazy(() => import('../views/utilities/Filestorage')))
+const Login2 = Loadable(lazy(() => import('../views/authentication/Login')))
+const Register2 = Loadable(lazy(() => import('../views/authentication/Register')))
 const Error = Loadable(lazy(() => import('../views/authentication/Error')));
 
 const Router = [
@@ -25,6 +27,8 @@ const Router = [
       { path: '/ui/typography', exact: true, element: <EmbeddingsPage /> },
       { path: '/ui/shadow', exact: true, element: <ChatBot /> },
       { path: '/ui/filestorage', exact: true, element: <FileStorage /> },
+      { path: '/auth/login', exact: true, element: <Login2 /> },
+      { path: '/auth/register', exact: true, element: <Register2 /> },
       { path: '*', element: <Navigate to="/auth/404" /> },
     ],
   },
