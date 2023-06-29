@@ -123,10 +123,13 @@ const ChatBot = () => {
       );
     } else {
       return (
-        <div>
-          <Input placeholder="Ingrese el texto" />
-          <Input placeholder="Ingrese el texto" />
-        </div>
+        <iframe
+          src="https://www.chatbase.co/chatbot-iframe/0I78hQ3XRvG3uJhMLFD9z"
+          title="ChatBot"
+          frameBorder={0}
+          width="100%"
+          height="650"
+        ></iframe>
       );
     }
   };
